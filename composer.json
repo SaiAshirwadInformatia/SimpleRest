@@ -1,5 +1,5 @@
 {
-	"name" : "sailabs/simplerest",
+	"name" : "saiashirwadinformatia/simplerest",
 	"type" : "library",
 	"description" : "Simple REST Service Executor",
 	"keywords" : ["simple rest service", "webservices", "rest executor"],

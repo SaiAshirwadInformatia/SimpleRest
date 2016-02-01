@@ -1,7 +1,7 @@
 <?php
-namespace sailabs\test;
+namespace saiashirwadinformatia\test;
 
-use sailabs\SimpleRest;
+use saiashirwadinformatia\SimpleRest;
 
 class SimpleRestTest extends \PHPUnit_Framework_TestCase
 {
@@ -12,6 +12,7 @@ class SimpleRestTest extends \PHPUnit_Framework_TestCase
     {
         $this->simpleRest = new SimpleRest();
     }
+
     public function testRESTGet()
     {
         $usersMeta = $this->simpleRest->get('http://tools.saiashirwad.com/api/users/meta');

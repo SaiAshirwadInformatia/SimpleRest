@@ -1,5 +1,5 @@
 <?php
-namespace sailabs;
+namespace saiashirwadinformatia;
 
 class SimpleRest
 {
