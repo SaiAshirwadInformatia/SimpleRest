@@ -218,4 +218,21 @@ class SimpleRest
     {
         return $this->execute($url, 'delete', $data, $headers);
     }
+
+    /**
+     * Short hand version to get JSON via GET request. 
+     * Analogy : $.getJSON from jQuery
+     *
+     * @param  $url
+     * @param  array   $data
+     * @return mixed
+     */
+    public function getJSON($url,$data,$headers)
+    {
+
+        $response = $this->get($url,$data,$headers);
+        $response["response"] = json_encode($response["response"]); // Again decoding it back to JSON
+
+        return $response;
+    }
 }
